@@ -1,5 +1,4 @@
 body {
-    max-width: 100%;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +8,6 @@ body {
 }
 
 header {
-    display: flex;
     align-items: flex-start;
     background: #1a1c19;
     border: 1px solid #e0d6c2;
@@ -18,61 +16,63 @@ header {
     flex-wrap: nowrap;
     height: 56px;
     justify-content: space-between;
+    padding: 3px;
     margin: 10px;
+    display: flex;
 }
+
 
 
 nav li {
     display: inline;
 }
 
-.rest{
-    color: #e0d6c2;
+
+
+.rest {
+    color: white;
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     background-color: #1a1c19;
     border-radius: 30px;
-    border: 1px solid #e0d6c2;
     transition: background-color 0.3s ease;
-}
-
-.cnt{
-    color: #e0d6c2;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 10px 20px;
+    border: 1px solid white;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 650px;
-    background-color: #1a1c19;
-    border-radius: 30px;
-    border: 1px solid #e0d6c2;
-    transition: background-color 0.3s ease;
 }
-
 .ms{
-    color: #e0d6c2;
+    color: white;
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
-    padding-left: 100px;
-    padding-right: 100px;
     background-color: #323025;
     border-radius: 30px;
-    width: 370px;
     transition: background-color 0.3s ease;
+    width: 370px;
+    box-sizing: border-box;
+    padding-left: 100px; /* Increase left padding to extend border horizontally */
+  padding-right: 100px;
+  
+}
+.cnt{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #1a1c19;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+    margin-left: 500px;
 }
 
-.rest:hover {
-    background-color: #B1a592;
-    color: #1a1c19;
+nav .rest:hover {
+    background-color: #b1a592;
+    color:#1a1c19
 }
-
-.cnt:hover {
-    background-color: #B1a592;
+nav .cnt:hover{
+    background-color: #b1a592;
     color: #1a1c19;
 }
 
@@ -104,7 +104,7 @@ main {
 
 .card.large {
     background-color: #dfd3b0;
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,10 +112,10 @@ main {
 
 .card.medium {
     background-color: #91946b;
-    grid-column: span 3;
+    grid-column: span 1;
 }
 
-.card.small {
+.card small {
     background-color: #a37b5d;
     grid-column: span 1;
 }
@@ -164,7 +164,7 @@ p {
 
 .card.large {
     background-color: #dfd3b0;
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +172,7 @@ p {
 
 .card.medium {
     background-color: #91946b;
-    grid-column: span 3;
+    grid-column: span 1;
 }
 
 .card.small {
